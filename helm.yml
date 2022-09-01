@@ -6,4 +6,7 @@ ingress:
   enabled: false
   scheme: null
 configMap:
-  enabled: "false"
+  enabled: "true"
+  data:
+    CART_ENDPOINT: "cart:8080"
+    DB_HOST: roboshop-prod-rds.cdkob5uw5kab.us-east-1.rds.amazonaws.com
