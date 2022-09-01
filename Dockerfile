@@ -6,4 +6,5 @@ WORKDIR  /app
 USER     roboshop
 
 ADD      shipping.jar .
-ENTRYPOINT ["java", "-jar", "shipping.jar"]
+ADD      run.sh /
+ENTRYPOINT ["bash", "run.sh"]
