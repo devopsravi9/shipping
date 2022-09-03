@@ -11,3 +11,5 @@ configMap:
     CART_ENDPOINT: "cart:8080"
     DB_HOST: roboshop-prod-rds.cdkob5uw5kab.us-east-1.rds.amazonaws.com
     JVM_MEM: "1024"
+externalSecret:
+  enabled: "false"
