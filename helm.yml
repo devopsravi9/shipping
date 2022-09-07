@@ -26,3 +26,13 @@ resources:
   limits:
     memory: "3500Mi"
     cpu: "1200m"
+
+health:
+  endpoint: /health
+  port: 8080
+  readiness:
+    initialDelaySeconds: 30
+    periodSeconds: 10
+  liveness:
+    initialDelaySeconds : 5
+    periodSeconds : 10
