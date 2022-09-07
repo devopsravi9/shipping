@@ -13,3 +13,8 @@ configMap:
     JVM_MEM: "1024"
 externalSecret:
   enabled: "false"
+
+hpa:
+  min: 2
+  max: 10
+  cpuAvg: 50
